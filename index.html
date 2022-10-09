@@ -35,9 +35,12 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                             href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="#portfolio">Portfolio</a></li>
+
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="#skills">Skills</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                             href="#contact">Contact</a></li>
                 </ul>
@@ -45,20 +48,43 @@
         </div>
     </nav>
     <!-- Masthead-->
-    <header class="masthead bg-primary text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
-            <!-- Masthead Avatar Image-->
-            <img class="masthead-avatar mb-5" src="assets/img/logo.jpg" alt="" />
-            <!-- Masthead Heading-->
-            <h1 class="masthead-heading text-uppercase mb-0">Yasmine Cherif</h1>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
+    <header class="masthead bg-primary text-white text-center" id="about">
+        <div class="container">
+            <div class="d-flex align-items-center row" style="align-items: center;">
+                <!-- Masthead Avatar Image-->
+                <img width="600px" height="400px" style="border-radius: 50%;" class="col-lg-5 col-md-4 col-sm-10 mb-5"
+                    src="assets/img/logo.jpg" alt="" />
+                   <div class="col-lg-1 col-md-2 "></div> 
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <!-- Masthead Heading-->
+                    <h1 class="masthead-heading text-uppercase mb-0">Yasmine Cherif</h1>
+                    <!-- Icon Divider-->
+                    <div class="divider-custom divider-light">
+                        <div class="divider-custom-line"></div>
+                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                        <div class="divider-custom-line"></div>
+                    </div>
+                    <!-- Masthead Subheading-->
+                    <p class="masthead-subheading font-weight-light mb-0"> Software Engineer - Web/Mobile Developer </p>
+                    <p style="margin-top:20px ;">Innovative FULL STACK developper with more than 3 years
+                        experience building,
+                        maintaining and testing
+                        Responsive Web and Mobile applications. Proficient in HTML, CSS and JavaScript/TypeScript; plus
+                        modern libraries and
+                        frameworks.</p>
+                    <p style="margin-top:20px ;"> I'm really open to any opportunity that will give me the chance to
+                        start a new
+                        adventure, express my creativity, expand myself on the job experiences and acquire new skills
+                        for further refinement.</p>
+                    <div class="text-center mt-4">
+                        <a class="btn btn-xl btn-outline-light" href="./Yasmine_Cherif_Resume.pdf" target="_blank">
+                            <i class="fas fa-download mr-2"></i>
+                            Download My Resume
+                        </a>
+                    </div>
+                </div>
+
             </div>
-            <!-- Masthead Subheading-->
-            <p class="masthead-subheading font-weight-light mb-0"> Software Engineer  -  Web/Mobile Developer </p>
         </div>
     </header>
     <!-- Portfolio Section-->
@@ -137,37 +163,86 @@
             </div>
         </div>
     </section>
-    <!-- About Section-->
-    <section class="page-section bg-primary text-white mb-0" id="about">
+    <section class="page-section  bg-primary text-white mb-0" id="skills">
         <div class="container">
-            <!-- About Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-white">Skills</h2>
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
                 <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
-            <!-- About Section Content-->
-            <div class="row">
-                <div class="col-lg-4 ml-auto">
-                    <p class="lead">Innovative FULL STACK developper with more than 3 years experience building, maintaining and testing
-                        Responsive Web and Mobile applications. Proficient in HTML, CSS and JavaScript/TypeScript; plus modern libraries and
-                        frameworks.</p>
+            <div class="row justify-content-center" style="margin-top: 50px;">
+                <div class="col-md-2 col-sm-2 col-lg-1 mb-1 ">
+                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/cpp.png"
+                        alt="" />
                 </div>
-                <div class="col-lg-4 mr-auto"><br />
-                    <p class="lead"> I'm really open to any opportunity that will give me the chance to start a new
-                        adventure, express my creativity, expand myself on the job experiences and acquire new skills for further refinement.</p>
+                <div class="col-md-2 col-sm-2 col-lg-1 mb-1">
+                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/python.png"
+                        alt="" />
                 </div>
-            </div>
-            <!-- About Section Button-->
-            <div class="text-center mt-4">
-                <a class="btn btn-xl btn-outline-light" href="./Yasmine_Cherif_Resume.pdf" target="_blank">
-                    <i class="fas fa-download mr-2"></i>
-                    Download My Resume
-                </a>
+                <div class="col-md-2 col-sm-2 col-lg-1 mb-1">
+                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/js.png"
+                        alt="" />
+                </div>
+                <div class="col-md-2 col-sm-2 col-lg-1 mb-1">
+                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/ts.png"
+                        alt="" />
+                </div>
+                <div class="col-md-2 col-sm-2 col-lg-1 mb-1">
+                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/node.png"
+                        alt="" />
+                </div>
+                <div class="col-md-2 col-sm-2 col-lg-1 mb-1">
+                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/nest.png"
+                        alt="" />
+                </div>
+                <div class="col-md-2 col-sm-2 col-lg-1 mb-1">
+                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/react.png"
+                        alt="" />
+                </div>
+                <div class="col-md-2 col-sm-2 col-lg-1 mb-1">
+                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/angular.png"
+                        alt="" />
+                </div>
+                <div class="col-md-2 col-sm-2 col-lg-1 mb-1">
+                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/mongo.jpg"
+                        alt="" />
+                </div>
+                <div class="col-md-2 col-sm-2 col-lg-1 mb-1">
+                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/sql.png"
+                        alt="" />
+                </div>
+                <div class="col-md-2 col-sm-2 col-lg-1 mb-1">
+                    <img width="70px" height="60px" class="masthead-avatar mb-5" src="assets/img/skills/linux.png"
+                        alt="" />
+                </div>
+                <div class="col-md-2 col-sm-2 col-lg-1 mb-1">
+                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/github.png"
+                        alt="" />
+                </div>
+                <div class="col-md-2 col-sm-2 col-lg-1 mb-1">
+                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/docker.png"
+                        alt="" />
+                </div>
+                <div class="col-md-2 col-sm-2 col-lg-1 mb-1">
+                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/hadoop.png"
+                        alt="" />
+                </div>
+                <div class="col-md-2 col-sm-2 col-lg-1 mb-1">
+                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/spark.png"
+                        alt="" />
+                </div>
+                <div class="col-md-2 col-sm-2 col-lg-1 mb-1">
+                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/jest.png"
+                        alt="" />
+                </div>
+
+
+
             </div>
         </div>
+
     </section>
     <!-- Footer-->
     <footer id="contact" class="footer text-center">
