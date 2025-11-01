@@ -50,22 +50,22 @@ A modern, responsive portfolio website showcasing professional experience, skill
    php -S localhost:8000
    ```
 
-## 📝 Customization
+<!-- ## 📝 Customization -->
 
-### Personal Information
+<!-- ### Personal Information
 Edit the following sections in `index.html`:
 
 - **Contact Details**: Update phone, email, and social links
 - **Experience**: Modify job positions, companies, and achievements
 - **Skills**: Add or remove technical skills
-- **Projects**: Update project descriptions and technologies
+- **Projects**: Update project descriptions and technologies -->
 
-### Styling
+<!-- ### Styling
 Customize colors and styling in `styles.css`:
 
 - **Color Scheme**: Update CSS custom properties in `:root`
 - **Typography**: Modify font sizes and families
-- **Animations**: Adjust animation durations and effects
+- **Animations**: Adjust animation durations and effects -->
 
 <!-- ### Content
 Replace placeholder content with:
