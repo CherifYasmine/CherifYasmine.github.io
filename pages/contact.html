@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Yasmine Cherif | Get In Touch</title>
+    <meta name="description" content="Get in touch with Yasmine Cherif for collaboration opportunities, project inquiries, or technical discussions">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cherifyasmine.github.io/pages/contact.html">
+    <meta property="og:title" content="Contact - Yasmine Cherif">
+    <meta property="og:description" content="Let's connect and discuss opportunities in software development">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Contact - Yasmine Cherif">
+    <meta property="twitter:description" content="Let's connect and discuss opportunities in software development">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Yasmine Cherif</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <!-- <li><a href="blog.html" class="nav-link">Blog</a></li> -->
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="contact-header">
+        <div class="header-background">
+            <div class="floating-elements">
+                <div class="float-icon"><i class="fas fa-envelope"></i></div>
+                <div class="float-icon"><i class="fas fa-phone"></i></div>
+                <div class="float-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="float-icon"><i class="fas fa-paper-plane"></i></div>
+                <div class="float-icon"><i class="fas fa-comments"></i></div>
+            </div>
+            <div class="particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="header-content">
+                <div class="header-badge">
+                    <i class="fas fa-handshake"></i>
+                    Let's Connect
+                </div>
+                
+                <h1 class="page-title">
+                    <span class="title-gradient">Get In</span>
+                    <span class="title-main">Touch</span>
+                </h1>
+                
+                <p class="page-subtitle">
+                    Ready to collaborate? Let's discuss your next project, explore opportunities,
+                    or simply connect over shared interests in technology and innovation.
+                </p>
+                
+                <div class="contact-methods">
+                    <a href="mailto:yasmine.cherif@example.com" class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="method-text">
+                            <span class="method-label">Email</span>
+                            <span class="method-value">yasmine.cherif@example.com</span>
+                        </div>
+                    </a>
+                    
+                    <a href="https://linkedin.com/in/yasmine-cherif" target="_blank" class="contact-method">
+                        <div class="method-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="method-text">
+                            <span class="method-label">LinkedIn</span>
+                            <span class="method-value">Connect with me</span>
+                        </div>
+                    </a>
+                    
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="method-text">
+                            <span class="method-label">Location</span>
+                            <span class="method-value">Netherlands</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section section-padding">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <h2 class="form-title">Send a Message</h2>
+                        <p class="form-subtitle">
+                            Have a project in mind? Let's discuss how we can work together
+                            to bring your ideas to life.
+                        </p>
+                    </div>
+                    
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName" class="form-label">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" class="form-input" required>
+                                <div class="form-error"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName" class="form-label">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" class="form-input" required>
+                                <div class="form-error"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                                <div class="form-error"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-input">
+                                <div class="form-error"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company" class="form-label">Company/Organization</label>
+                            <input type="text" id="company" name="company" class="form-input">
+                            <div class="form-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <select id="subject" name="subject" class="form-select" required>
+                                <option value="">Select a subject</option>
+                                <option value="collaboration">Project Collaboration</option>
+                                <option value="job-opportunity">Job Opportunity</option>
+                                <option value="consultation">Technical Consultation</option>
+                                <option value="speaking">Speaking Engagement</option>
+                                <option value="mentorship">Mentorship</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="form-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget" class="form-label">Project Budget (Optional)</label>
+                            <select id="budget" name="budget" class="form-select">
+                                <option value="">Select budget range</option>
+                                <option value="under-5k">Under $5,000</option>
+                                <option value="5k-15k">$5,000 - $15,000</option>
+                                <option value="15k-30k">$15,000 - $30,000</option>
+                                <option value="30k-50k">$30,000 - $50,000</option>
+                                <option value="over-50k">$50,000+</option>
+                                <option value="discuss">Let's discuss</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="timeline" class="form-label">Project Timeline (Optional)</label>
+                            <select id="timeline" name="timeline" class="form-select">
+                                <option value="">Select timeline</option>
+                                <option value="asap">ASAP</option>
+                                <option value="1-month">Within 1 month</option>
+                                <option value="1-3-months">1-3 months</option>
+                                <option value="3-6-months">3-6 months</option>
+                                <option value="6-months-plus">6+ months</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                class="form-textarea" 
+                                rows="6" 
+                                placeholder="Tell me about your project, goals, and how I can help..."
+                                required
+                            ></textarea>
+                            <div class="form-error"></div>
+                            <div class="character-count">
+                                <span class="current-count">0</span> / <span class="max-count">1000</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter" class="form-checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-text">Subscribe to my newsletter for updates and insights</span>
+                            </label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy" name="privacy" class="form-checkbox" required>
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-text">
+                                    I agree to the <a href="#" target="_blank">Privacy Policy</a> and 
+                                    <a href="#" target="_blank">Terms of Service</a> *
+                                </span>
+                            </label>
+                            <div class="form-error"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info-container">
+                    <div class="contact-card">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Quick Response</h3>
+                        <p>I typically respond to inquiries within 24 hours during business days.</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="card-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Remote Friendly</h3>
+                        <p>Available for remote work and collaboration with teams worldwide.</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="card-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3>Available for Hire</h3>
+                        <p>Currently accepting new projects and full-time opportunities.</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>Connect on Social</h4>
+                        <div class="social-grid">
+                            <a href="https://github.com/CherifYasmine" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://linkedin.com/in/yasmine-cherif" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://medium.com/@yasminecherif" target="_blank" class="social-link">
+                                <i class="fab fa-medium"></i>
+                                <span>Medium</span>
+                            </a>
+                            <a href="https://dev.to/yasmine_ddec94f4d4" target="_blank" class="social-link">
+                                <i class="fab fa-dev"></i>
+                                <span>Dev.to</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section section-padding bg-secondary">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Quick answers to common questions about working together</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item" data-faq="1">
+                    <div class="faq-question">
+                        <h4>What types of projects do you work on?</h4>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I specialize in full-stack web development, cloud architecture, and DevOps automation. I work on everything from MVP development to enterprise-scale applications, focusing on clean architecture, performance optimization, and maintainable code.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-faq="2">
+                    <div class="faq-question">
+                        <h4>What is your typical project timeline?</h4>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Project timelines vary based on complexity and scope. Simple websites or prototypes typically take 2-4 weeks, while full-scale applications can range from 2-6 months. I always provide detailed project estimates during our initial consultation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-faq="3">
+                    <div class="faq-question">
+                        <h4>Do you work with international clients?</h4>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! I work with clients globally and am experienced in remote collaboration. I'm flexible with time zones and use modern communication tools to ensure smooth project delivery regardless of location.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-faq="4">
+                    <div class="faq-question">
+                        <h4>What technologies do you specialize in?</h4>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>My core stack includes React/Angular for frontend, Node.js/Python for backend, and AWS/Docker for cloud infrastructure. I'm also experienced with databases like PostgreSQL, MongoDB, and various DevOps tools for CI/CD automation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-faq="5">
+                    <div class="faq-question">
+                        <h4>Do you provide ongoing support and maintenance?</h4>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, I offer comprehensive maintenance packages including bug fixes, security updates, performance monitoring, and feature enhancements. I believe in long-term partnerships and supporting your project's growth.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-faq="6">
+                    <div class="faq-question">
+                        <h4>What information should I include in my project inquiry?</h4>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Please include your project goals, target audience, preferred technologies, timeline, and budget range. The more details you provide, the better I can tailor my response to your specific needs and provide an accurate estimate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Availability Calendar -->
+    <!-- <section class="availability-section section-padding">
+        <div class="container">
+            <div class="availability-grid">
+                <div class="availability-info">
+                    <h2 class="section-title">Current Availability</h2>
+                    <p class="section-subtitle">
+                        Planning your project timeline? Here's my current availability and booking status.
+                    </p>
+                    
+                    <div class="availability-status">
+                        <div class="status-item available">
+                            <div class="status-indicator"></div>
+                            <div class="status-text">
+                                <h4>Available for New Projects</h4>
+                                <p>Currently accepting new client projects starting in April 2024</p>
+                            </div>
+                        </div>
+                        
+                        <div class="status-item limited">
+                            <div class="status-indicator"></div>
+                            <div class="status-text">
+                                <h4>Limited Consultation Slots</h4>
+                                <p>2-3 consultation slots available per week for project discussions</p>
+                            </div>
+                        </div>
+                        
+                        <div class="status-item booking">
+                            <div class="status-indicator"></div>
+                            <div class="status-text">
+                                <h4>Advance Booking Recommended</h4>
+                                <p>For projects starting after June 2024, early booking is advised</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="booking-actions">
+                        <a href="#" class="btn btn-primary schedule-btn">
+                            <i class="fas fa-calendar-plus"></i>
+                            Schedule a Call
+                        </a>
+                        <a href="#contact-form" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            Send Inquiry
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="calendar-visual">
+                    <div class="calendar-header">
+                        <h4>Booking Calendar</h4>
+                        <p>March - May 2024</p>
+                    </div>
+                    <div class="calendar-grid">
+                        <div class="calendar-month">
+                            <h5>March 2024</h5>
+                            <div class="month-status busy">
+                                <i class="fas fa-calendar-times"></i>
+                                <span>Fully Booked</span>
+                            </div>
+                        </div>
+                        <div class="calendar-month">
+                            <h5>April 2024</h5>
+                            <div class="month-status available">
+                                <i class="fas fa-calendar-check"></i>
+                                <span>Available</span>
+                            </div>
+                        </div>
+                        <div class="calendar-month">
+                            <h5>May 2024</h5>
+                            <div class="month-status limited">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Limited Slots</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-logo">Yasmine Cherif</h3>
+                    <p>Software Engineer & Full-Stack Developer</p>
+                    <p>Building the future, one line of code at a time.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="pages/experience.html">Experience</a></li>
+                            <li><a href="pages/projects.html">Projects</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://medium.com/@yasminecherif" target="_blank">Blog</a></li>
+                            <li><a href="pages/contact.html">Contact</a></li>
+                            <li><a href="https://github.com/CherifYasmine" target="_blank">GitHub</a></li>
+                            <li><a href="https://linkedin.com/in/yasmine-cherif-0498b01b3/" target="_blank">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://github.com/CherifYasmine" class="social-icon" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yasmine-cherif-0498b01b3/" class="social-icon" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:yasmine.cherif9@gmail.com" class="social-icon" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Yasmine Cherif. All rights reserved.</p>
+                <p>Made with ❤️ and lots of ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-sun sun-icon"></i>
+        <i class="fas fa-moon moon-icon"></i>
+    </button>
+
+    <!-- Success Modal -->
+    <div class="modal" id="success-modal">
+        <div class="modal-content">
+            <div class="modal-icon success">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3 class="modal-title">Message Sent Successfully!</h3>
+            <p class="modal-text">Thank you for reaching out. I'll get back to you within 24 hours.</p>
+            <button class="btn btn-primary modal-close">
+                <i class="fas fa-check"></i>
+                Got it
+            </button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/common.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>

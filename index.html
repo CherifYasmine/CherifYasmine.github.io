@@ -1,619 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Yasmine Cherif</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
-        type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasmine Cherif - Software Engineer & Full-Stack Developer</title>
+    <meta name="description" content="Yasmine Cherif - Software Engineer specializing in full-stack development, cloud operations, and clean architecture. Based in Netherlands.">
+    <meta name="keywords" content="software engineer, full-stack developer, python, javascript, react, angular, aws, cloud operations">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cherifyasmine.github.io/">
+    <meta property="og:title" content="Yasmine Cherif - Software Engineer">
+    <meta property="og:description" content="Full-stack developer focused on clean architecture, automated releases, and reliable cloud operations">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Yasmine Cherif - Software Engineer">
+    <meta property="twitter:description" content="Full-stack developer focused on clean architecture, automated releases, and reliable cloud operations">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
-
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            </a>
-            <button
-                class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
-                type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#about">About</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#portfolio">Projects</a></li>
-
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#skills">Skills</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#contact">Contact</a></li>
-                </ul>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Yasmine Cherif</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="pages/experience.html" class="nav-link">Experience</a></li>
+                <li><a href="pages/projects.html" class="nav-link">Projects</a></li>
+                <!-- <li><a href="pages/blog.html" class="nav-link">Blog</a></li> -->
+                <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
             </div>
         </div>
     </nav>
-    <!-- Masthead-->
-    <header class="masthead bg-primary text-white text-center" id="about">
-        <div class="container">
-            <div class="d-flex align-items-center row" style="align-items: center;">
-                <!-- Masthead Avatar Image-->
-                <img width="500px" height="400px" style="border-radius: 50%;" class="col-lg-4 col-md-4 col-sm-10 mb-5"
-                    src="assets/img/logo.jpg" alt="" />
-                   <div class="col-lg-1 col-md-2 "></div> 
-                <div class="col-lg-7 col-md-6 col-sm-12">
-                    <!-- Masthead Heading-->
-                    <h1 class="masthead-heading text-uppercase mb-0">Yasmine Cherif</h1>
-                    <!-- Icon Divider-->
-                    <div class="divider-custom divider-light">
-                        <div class="divider-custom-line"></div>
-                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                        <div class="divider-custom-line"></div>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero">
+            <div class="hero-background">
+                <div class="geometric-shape shape-1"></div>
+                <div class="geometric-shape shape-2"></div>
+                <div class="geometric-shape shape-3"></div>
+                <div class="code-rain"></div>
+            </div>
+            
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text fade-in-up">
+                        <div class="hero-greeting">
+                            <span class="greeting-text">Hello, I'm</span>
+                        </div>
+                        <h1 class="hero-name">
+                            <span class="first-name">Yasmine</span>
+                            <span class="last-name">Cherif</span>
+                        </h1>
+                        <div class="hero-role">
+                            <span class="role-text">I build </span>
+                            <span class="typing-animation" data-words="exceptional web applications,scalable cloud solutions,intelligent ML pipelines,robust APIs,modern user interfaces"></span>
+                        </div>
+                        <p class="hero-description fade-in-up">
+                            A passionate software engineer specializing in full-stack development, 
+                            cloud architecture, and machine learning. I create digital solutions 
+                            that make a difference.
+                        </p>
+                        
+                        <div class="hero-cta fade-in-up">
+                            <a href="pages/projects.html" class="btn btn-primary">
+                                <span>View My Work</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="pages/contact.html" class="btn btn-outline">
+                                <span>Let's Talk</span>
+                                <i class="fas fa-comments"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="hero-social fade-in-up">
+                            <a href="https://github.com/CherifYasmine" class="social-icon" target="_blank" rel="noopener" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/yasmine-cherif-0498b01b3/" class="social-icon" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:yasmine.cherif9@gmail.com" class="social-icon" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="https://cherifyasmine.github.io/" class="social-icon" target="_blank" rel="noopener" aria-label="Portfolio">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                        </div>
                     </div>
-                    <!-- Masthead Subheading-->
-                    <p class="masthead-subheading font-weight-light mb-0"> Software Engineer </p>
-                    <p style="margin-top:20px ;">I’m a full-stack engineer with an architecture-first mindset. I turn complex requirements into simple, well-structured systems and automate the path to production so teams can ship quickly and safely. My focus is reliability by design—CI/CD, cloud readiness, and clear observability. I care about clarity, maintainability, and measurable outcomes: fewer failures, faster recovery, smoother releases.</p>
-                    <p style="margin-top:20px ;"> I'm really open to any opportunity that will give me the chance to
-                        start a new
-                        adventure, express my creativity, expand myself on the job experiences and acquire new skills
-                        for further refinement.</p>
-                    <div class="text-center mt-4">
-                        <a class="btn btn-xl btn-outline-light" href="./Yasmine_Cherif_Resume.pdf" target="_blank">
-                            <i class="fas fa-download mr-2"></i>
-                            Download My Resume
+                    
+                    <div class="hero-visual fade-in-right">
+                        <div class="code-window">
+                            <div class="window-header">
+                                <div class="window-controls">
+                                    <span class="control close"></span>
+                                    <span class="control minimize"></span>
+                                    <span class="control maximize"></span>
+                                </div>
+                                <div class="window-title">yasmine_cherif.py</div>
+                            </div>
+                            <div class="window-content">
+                                <div class="code-line">
+                                    <span class="line-number">1</span>
+                                    <span class="code-text">
+                                        <span class="keyword">class</span> 
+                                        <span class="class-name">SoftwareEngineer</span>:
+                                    </span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="line-number">2</span>
+                                    <span class="code-text">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">def</span> 
+                                        <span class="function">__init__</span>(self):
+                                    </span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="line-number">3</span>
+                                    <span class="code-text">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.name = <span class="string">"Yasmine Cherif"</span>
+                                    </span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="line-number">4</span>
+                                    <span class="code-text">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.role = <span class="string">"Full-Stack Developer"</span>
+                                    </span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="line-number">5</span>
+                                    <span class="code-text">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.skills = [<span class="string">"Python"</span>, <span class="string">"JavaScript"</span>, <span class="string">"React"</span>, <span class="string">"AWS"</span>]
+                                    </span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="line-number">6</span>
+                                    <span class="code-text">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.passion = <span class="string">"Building amazing things"</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <span class="scroll-text">Scroll to explore</span>
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Preview Section -->
+        <section class="about-preview section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text fade-in-left">
+                        <h2 class="section-title">About Me</h2>
+                        <p class="section-subtitle">
+                            Passionate about creating digital solutions that make an impact
+                        </p>
+                        <p>
+                            I'm a software engineer with 3+ years of experience building 
+                            scalable applications and robust cloud infrastructure. My expertise 
+                            spans from Python microservices to React applications, with a 
+                            strong focus on DevOps and automation.
+                        </p>
+                        <p>
+                            Currently working at Next Generation Sensors B.V, where I architect 
+                            and develop laboratory instrument control systems, real-time data 
+                            pipelines, and ML-powered analytics solutions.
+                        </p>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number" data-counter="4">0</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-counter="25">0</div>
+                                <div class="stat-label">Projects Completed</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-counter="15">0</div>
+                                <div class="stat-label">Technologies</div>
+                            </div>
+                        </div>
+                        <a href="pages/experience.html" class="btn btn-secondary">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
-                </div>
-
-            </div>
-        </div>
-    </header>
-    <!-- Portfolio Section-->
-    <section class="page-section portfolio" id="portfolio">
-        <div class="container">
-            <!-- Portfolio Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Projects</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Portfolio Grid Items-->
-            <div class="row justify-content-center">
-                <!-- Portfolio Item 1-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
+                    
+                    <div class="about-visual fade-in-right">
+                        <div class="skills-preview">
+                            <div class="skill-orbit">
+                                <div class="skill-item python" data-skill="Python">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <div class="skill-item javascript" data-skill="JavaScript">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <div class="skill-item react" data-skill="React">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <div class="skill-item aws" data-skill="AWS">
+                                    <i class="fab fa-aws"></i>
+                                </div>
+                                <div class="skill-item docker" data-skill="Docker">
+                                    <i class="fab fa-docker"></i>
+                                </div>
+                                <div class="skill-item git" data-skill="Git">
+                                    <i class="fab fa-git-alt"></i>
+                                </div>
+                            </div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/project1.jpg" alt="" />
-                    </div>
-                </div>
-                <!-- Portfolio Item 2-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/memories.png" alt="" />
-                    </div>
-                </div>
-                <!-- Portfolio Item 3-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/chat.png" alt="" />
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 4-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/movies.png" alt="" />
-                    </div>
-                </div>
-                <!-- Portfolio Item 5-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img height="170px" width="500px" style="max-width:100% ;" src="assets/img/portfolio/tasks.png" alt="" />
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 6-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/weconnect.png" alt="" />
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="page-section  bg-primary text-white mb-0" id="skills">
-        <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-white">Skills</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <div class="row justify-content-center" style="margin-top: 50px;">
-                <div title="C++" class="col-md-2 col-sm-2 col-lg-1 mb-1 ">
-                        <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/cpp.png"
-                        alt="" />
-                </div>
-                <div title="python" class="col-md-2 col-sm-2 col-lg-1 mb-1">
-                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/python.png"
-                        alt="" />
-                </div>
-                <div title="JavaScript" class="col-md-2 col-sm-2 col-lg-1 mb-1">
-                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/js.png"
-                        alt="" />
-                </div>
-                <div title="TypeScript" class="col-md-2 col-sm-2 col-lg-1 mb-1">
-                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/ts.png"
-                        alt="" />
-                </div>
-                <div title="NodeJS" class="col-md-2 col-sm-2 col-lg-1 mb-1">
-                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/node.png"
-                        alt="" />
-                </div>
-                <div title="NestJS" class="col-md-2 col-sm-2 col-lg-1 mb-1">
-                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/nest.png"
-                        alt="" />
-                </div>
-                <div title="ReactJS / React Native" class="col-md-2 col-sm-2 col-lg-1 mb-1">
-                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/react.png"
-                        alt="" />
-                </div>
-                <div title="Angular" class="col-md-2 col-sm-2 col-lg-1 mb-1">
-                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/angular.png"
-                        alt="" />
-                </div>
-                <div title="MongoDB" class="col-md-2 col-sm-2 col-lg-1 mb-1">
-                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/mongo.jpg"
-                        alt="" />
-                </div>
-                <div title="SQL" class="col-md-2 col-sm-2 col-lg-1 mb-1">
-                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/sql.png"
-                        alt="" />
-                </div>
-                <div title="Linux" class="col-md-2 col-sm-2 col-lg-1 mb-1">
-                    <img width="70px" height="60px" class="masthead-avatar mb-5" src="assets/img/skills/linux.png"
-                        alt="" />
-                </div>
-                <div title="Github" class="col-md-2 col-sm-2 col-lg-1 mb-1">
-                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/github.png"
-                        alt="" />
-                </div>
-                <div title="Docker" class="col-md-2 col-sm-2 col-lg-1 mb-1">
-                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/docker.png"
-                        alt="" />
-                </div>
-                <div title="Hadoop" class="col-md-2 col-sm-2 col-lg-1 mb-1">
-                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/hadoop.png"
-                        alt="" />
-                </div>
-                <div title="Spark" class="col-md-2 col-sm-2 col-lg-1 mb-1">
-                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/spark.png"
-                        alt="" />
-                </div>
-                <div title="Jest" class="col-md-2 col-sm-2 col-lg-1 mb-1">
-                    <img width="70px" height="70px" class="masthead-avatar mb-5" src="assets/img/skills/jest.png"
-                        alt="" />
-                </div>
+        </section>
 
-
-
-            </div>
-        </div>
-
-    </section>
-    <!-- Footer-->
-    <footer id="contact" class="footer text-center">
-        <div class="container">
-            <div class="row">
-                <!-- Footer Location-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">ADDRESS</h4>
-                    <p class="lead mb-0">
-                        2 Cité El Wifek Avenue Carthage
-                        <br />
-                        La Marsa, Tunis
+        <!-- Services Section -->
+        <section class="services section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">What I Do</h2>
+                    <p class="section-subtitle">
+                        Comprehensive solutions for modern web development
                     </p>
                 </div>
-                <!-- Footer Social Icons-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">WHERE TO FIND ME</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/yasmine.cherif.104"
-                        target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1"
-                        href="https://www.linkedin.com/in/yasmine-cherif-0498b01b3/" target="_blank"><i
-                            class="fab fa-fw fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/CherifYasmine"
-                        target="_blank"><i class="fab fa-fw fa-github"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="mailto:yasmine.chirif@insat.u-carthage.tn"
-                        target="_blank"><i class="fa fa-envelope"></i></a>
+                
+                <div class="services-grid">
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="service-title">Full-Stack Development</h3>
+                        <p class="service-description">
+                            End-to-end web application development using modern frameworks 
+                            like React, Angular, and Node.js with robust backend APIs.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> React & Angular SPAs</li>
+                            <li><i class="fas fa-check"></i> RESTful & GraphQL APIs</li>
+                            <li><i class="fas fa-check"></i> Database Design</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3 class="service-title">Cloud Architecture</h3>
+                        <p class="service-description">
+                            Scalable cloud solutions using AWS, Docker, and Kubernetes 
+                            with automated deployment pipelines and monitoring.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> AWS & Azure Solutions</li>
+                            <li><i class="fas fa-check"></i> Container Orchestration</li>
+                            <li><i class="fas fa-check"></i> CI/CD Pipelines</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="service-title">Machine Learning</h3>
+                        <p class="service-description">
+                            Intelligent solutions using Python, scikit-learn, and data 
+                            processing pipelines for predictive analytics and automation.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Data Processing Pipelines</li>
+                            <li><i class="fas fa-check"></i> Predictive Models</li>
+                            <li><i class="fas fa-check"></i> Real-time Analytics</li>
+                        </ul>
+                    </div>
                 </div>
-                <!-- Footer About Text-->
-                <div class="col-lg-4">
-                    <h4 class="text-uppercase mb-4">CREDITS</h4>
-                    <p class="lead mb-0">
-                        Theme created by Start Bootstrap and customized by Yasmine Cherif .
-                    </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-logo">Yasmine Cherif</h3>
+                    <p>Software Engineer & Full-Stack Developer</p>
+                    <p>Building the future, one line of code at a time.</p>
                 </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="pages/experience.html">Experience</a></li>
+                            <li><a href="pages/projects.html">Projects</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://medium.com/@yasminecherif" target="_blank">Blog</a></li>
+                            <li><a href="pages/contact.html">Contact</a></li>
+                            <li><a href="https://github.com/CherifYasmine" target="_blank">GitHub</a></li>
+                            <li><a href="https://linkedin.com/in/yasmine-cherif-0498b01b3/" target="_blank">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://github.com/CherifYasmine" class="social-icon" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yasmine-cherif-0498b01b3/" class="social-icon" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:yasmine.cherif9@gmail.com" class="social-icon" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Yasmine Cherif. All rights reserved.</p>
+                <p>Made with ❤️ and lots of ☕</p>
             </div>
         </div>
     </footer>
-    <!-- Copyright Section-->
-    <div class="copyright py-4 text-center text-white">
-        <div class="container"><small>Copyright © Yasmine Cherif <span id="copyright">
-                    <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
-                </span></small></div>
-    </div>
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
-    <div class="scroll-to-top d-lg-none position-fixed">
-        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i
-                class="fa fa-chevron-up"></i></a>
-    </div>
-    <!-- Portfolio Modals-->
-    <!-- Portfolio Modal 1-->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
-        aria-labelledby="portfolioModal1Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                                    id="portfolioModal1Label">Pastry Website </h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/project1.jpg" alt="" />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-5">This a Pastry website Called "Pause douceur"
-                                <h6>Check the <a href="https://github.com/CherifYasmine/SitePatisserie"
-                                        target="_blank">Github
-                                        repository</a>.</h6>
 
-                                </p>
-                                <br>
-                                <h4>Technologies: </h4>
-                                <p>Symfony 4</p>
-                                <p>MySql</p>
-                                <button class="btn btn-primary" data-dismiss="modal">
-                                    <i class="fas fa-times fa-fw"></i>
-                                    Close Window
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 2-->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
-        aria-labelledby="portfolioModal2Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                                    id="portfolioModal2Label">Memories</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/memories.png" alt="" />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-5">
-                                    The App is called "Memories" and it is a simple social media app that allows users
-                                    to post interesting events that happened in their lives.
-                                <h6>Check the <a href="https://yasminecherif-memories-project.netlify.app/"
-                                        target="_blank">APP</a> or the <a
-                                        href="https://github.com/CherifYasmine/memories_react" target="_blank">Github
-                                        repository</a>.</h6>
-
-                                </p>
-                                <br>
-                                <h4>Technologies: </h4>
-                                <h6>Front-end: </h6>
-                                <p>ReactJs</p>
-                                <p> HTML&CSS</p>
-
-                                <h6>Back-end: </h6>
-                                <p>Express</p>
-                                <p>NodeJS</p>
-                                <p>MongoDB</p>
-                                <h6>Deployment: </h6>
-                                <p>Heroku</p>
-                                <p>Github pages</p>
-                                <p>Netlify</p>
-                                <button class="btn btn-primary" data-dismiss="modal">
-                                    <i class="fas fa-times fa-fw"></i>
-                                    Close Window
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 3-->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog"
-        aria-labelledby="portfolioModal2Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                                    id="portfolioModal2Label">Realtime Chat App</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/chat.png" alt="" />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-5">
-                                    This is a realtime chat application where you can create rooms and join them to chat
-                                    with other persons.
-                                <h6>Check the <a href="https://yasminecherif-chat-realtime-app.netlify.app"
-                                        target="_blank">APP</a> or the <a
-                                        href="https://github.com/CherifYasmine/realtime-chat-app" target="_blank">Github
-                                        repository</a>.</h6>
-
-                                </p>
-                                <br>
-                                <h4>Technologies: </h4>
-                                <h6>Front-end: </h6>
-                                <p>ReactJs</p>
-                                <p> HTML&CSS</p>
-
-                                <h6>Back-end: </h6>
-                                <p>Express</p>
-                                <p>NodeJS</p>
-                                <p>Socket.io</p>
-                                <h6>Deployment: </h6>
-                                <p>Heroku</p>
-                                <p>Github pages</p>
-                                <p>Netlify</p>
-                                <button class="btn btn-primary" data-dismiss="modal">
-                                    <i class="fas fa-times fa-fw"></i>
-                                    Close Window
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 4-->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog"
-        aria-labelledby="portfolioModal2Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                                    id="portfolioModal2Label">Movies App</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/movies.png" alt="" />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-5">
-                                    This is a movies application where you can search for movies and see their ratings
-                                    and overviews.
-                                <h6>Check the <a href="https://cherifyasmine.github.io/MoviesApp/" target="_blank">APP</a>
-                                    or the <a
-                                        href="https://github.com/CherifYasmine/JavaScriptProjects/tree/master/movie-app-api"
-                                        target="_blank">Github
-                                        repository</a>.</h6>
-
-                                </p>
-                                <br>
-                                <h4>Technologies: </h4>
-                                <h6>Front-end: </h6>
-                                <p>HTML</p>
-                                <p> CSS</p>
-                                <p> JavaScript</p>
-                                <h6>Deployment: </h6>
-                                <p>Heroku</p>
-                                <button class="btn btn-primary" data-dismiss="modal">
-                                    <i class="fas fa-times fa-fw"></i>
-                                    Close Window
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 5-->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog"
-        aria-labelledby="portfolioModal2Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                                    id="portfolioModal2Label">WeConnect App</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/weconnect.png" alt="" />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-5">
-                                    This is a web application that gathers the co-working spaces in Tunisia to
-                                    facilitate searching them, rating them and get a reservation in a co-working space.
-                                </p>
-                                <br>
-                                <h4>Technologies: </h4>
-                                <h6>Front-end: (<p style="display: inline-block;"><b>Check the</b> <a
-                                            href="https://github.com/CherifYasmine/WeConnect" target="_blank">Github
-                                            repository</a></p>). </h6>
-                                <p>Angular</p>
-                                <h6>Back-end: (<p style="display: inline-block;"><b>Check the</b> <a
-                                            href="https://github.com/CherifYasmine/WeConnect-Backend"
-                                            target="_blank">Github
-                                            repository</a></p>). </h6>
-                                <p>ExpressJS</p>
-                                <p>NodeJS</p>
-                                <p>MongoDB</p>
-
-                                <button class="btn btn-primary" data-dismiss="modal">
-                                    <i class="fas fa-times fa-fw"></i>
-                                    Close Window
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 6-->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog"
-        aria-labelledby="portfolioModal2Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                                    id="portfolioModal2Label">Project Management</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/tasks.jpeg" alt="" />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-5">
-                                    This is a project management web application built for the company International Consulting Canada that helps manage projects using the Kanban methodology.
-                                </p>
-                                <br>
-                                <h4>Technologies: </h4>
-                                <h6>Front-end:</h6>
-                                <p>Angular</p>
-                                <h6>Back-end: </h6>
-                                <p>Django Python</p>
-                                <p>PostgreSQL</p>
-                                <button class="btn btn-primary" data-dismiss="modal">
-                                    <i class="fas fa-times fa-fw"></i>
-                                    Close Window
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Third party plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <!-- Scripts -->
+    <script src="js/common.js"></script>
+    <script src="js/home.js"></script>
 </body>
-
 </html>

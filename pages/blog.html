@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Yasmine Cherif | Technical Articles & Insights</title>
+    <meta name="description"
+        content="Technical blog featuring articles on software development, cloud architecture, and engineering insights by Yasmine Cherif">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cherifyasmine.github.io/pages/blog.html">
+    <meta property="og:title" content="Blog - Yasmine Cherif">
+    <meta property="og:description" content="Technical articles on software development and engineering best practices">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Blog - Yasmine Cherif">
+    <meta property="twitter:description"
+        content="Technical articles on software development and engineering best practices">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/blog.css">
+
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Yasmine Cherif</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <!-- <li><a href="blog.html" class="nav-link active">Blog</a></li> -->
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="blog-header">
+        <div class="header-background">
+            <div class="floating-code">
+                <div class="code-block">
+                    <span class="code-text">const insights = await getBlogPosts();</span>
+                </div>
+                <div class="code-block">
+                    <span class="code-text">knowledge.share();</span>
+                </div>
+                <div class="code-block">
+                    <span class="code-text">// Building the future</span>
+                </div>
+            </div>
+            <div class="particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="header-content">
+                <div class="header-badge">
+                    <i class="fas fa-blog"></i>
+                    Technical Blog
+                </div>
+
+                <h1 class="page-title">
+                    <span class="title-gradient">Insights</span>
+                    <span class="title-main">& Articles</span>
+                </h1>
+
+                <p class="page-subtitle">
+                    Technical insights, tutorials, and thoughts on software development,
+                    cloud architecture, and engineering best practices
+                </p>
+
+                <div class="header-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Articles Published</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">15K+</div>
+                        <div class="stat-label">Total Views</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Categories</div>
+                    </div>
+                </div>
+
+                <div class="header-actions">
+                    <div class="search-container">
+                        <input type="text" id="blog-search" placeholder="Search articles..." class="search-input">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                    <button class="btn btn-secondary newsletter-btn">
+                        <i class="fas fa-envelope"></i>
+                        Subscribe to Newsletter
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="blog-categories section-padding">
+        <div class="container">
+            <div class="categories-grid">
+                <div class="category-filter active" data-category="all">
+                    <i class="fas fa-th-large"></i>
+                    <span>All Articles</span>
+                    <div class="category-count">25</div>
+                </div>
+
+                <div class="category-filter" data-category="frontend">
+                    <i class="fab fa-js-square"></i>
+                    <span>Frontend</span>
+                    <div class="category-count">8</div>
+                </div>
+
+                <div class="category-filter" data-category="backend">
+                    <i class="fas fa-server"></i>
+                    <span>Backend</span>
+                    <div class="category-count">6</div>
+                </div>
+
+                <div class="category-filter" data-category="cloud">
+                    <i class="fas fa-cloud"></i>
+                    <span>Cloud & DevOps</span>
+                    <div class="category-count">5</div>
+                </div>
+
+                <div class="category-filter" data-category="architecture">
+                    <i class="fas fa-sitemap"></i>
+                    <span>Architecture</span>
+                    <div class="category-count">4</div>
+                </div>
+
+                <div class="category-filter" data-category="tutorials">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Tutorials</span>
+                    <div class="category-count">3</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-article section-padding bg-secondary">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Article</h2>
+                <p class="section-subtitle">Deep dive into advanced software engineering concepts</p>
+            </div>
+
+            <div class="featured-post">
+                <div class="featured-post-image">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=500&fit=crop&crop=entropy"
+                        alt="Building Scalable Microservices" loading="lazy">
+                    <div class="post-category">Architecture</div>
+                    <div class="reading-time">
+                        <i class="fas fa-clock"></i>
+                        12 min read
+                    </div>
+                </div>
+
+                <div class="featured-post-content">
+                    <div class="post-meta">
+                        <span class="post-date">
+                            <i class="fas fa-calendar"></i>
+                            March 15, 2024
+                        </span>
+                        <div class="post-tags">
+                            <span class="tag">Microservices</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Kubernetes</span>
+                        </div>
+                    </div>
+
+                    <h3 class="post-title">Building Scalable Microservices Architecture with Docker and Kubernetes</h3>
+
+                    <p class="post-excerpt">
+                        Explore the complete guide to designing and implementing microservices architecture
+                        using modern containerization technologies. Learn best practices for service discovery,
+                        load balancing, and inter-service communication.
+                    </p>
+
+                    <div class="post-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-eye"></i>
+                            2.3K views
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-heart"></i>
+                            156 likes
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-comment"></i>
+                            23 comments
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-share"></i>
+                            45 shares
+                        </div>
+                    </div>
+
+                    <div class="post-actions">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-book-open"></i>
+                            Read Article
+                        </button>
+                        <button class="btn btn-icon" data-action="bookmark">
+                            <i class="fas fa-bookmark"></i>
+                        </button>
+                        <button class="btn btn-icon" data-action="share">
+                            <i class="fas fa-share-alt"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Articles -->
+    <section class="recent-articles section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Recent Articles</h2>
+                <p class="section-subtitle">Latest insights and tutorials from the development world</p>
+            </div>
+
+            <div class="articles-grid">
+                <!-- Article 1 -->
+                <article class="article-card" data-category="frontend">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600&h=400&fit=crop&crop=entropy"
+                            alt="Advanced React Hooks" loading="lazy">
+                        <div class="article-category">Frontend</div>
+                        <div class="reading-time">
+                            <i class="fas fa-clock"></i>
+                            8 min
+                        </div>
+                    </div>
+
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">March 10, 2024</span>
+                            <div class="article-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Hooks</span>
+                            </div>
+                        </div>
+
+                        <h3 class="article-title">Advanced React Hooks: Custom Hooks and Performance Optimization</h3>
+
+                        <p class="article-excerpt">
+                            Master advanced React Hooks patterns including custom hooks, optimization techniques,
+                            and common pitfalls to avoid in modern React applications.
+                        </p>
+
+                        <div class="article-stats">
+                            <div class="stat">
+                                <i class="fas fa-eye"></i>
+                                1.8K
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-heart"></i>
+                                124
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card" data-category="backend">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=600&h=400&fit=crop&crop=entropy"
+                            alt="Python Async Programming" loading="lazy">
+                        <div class="article-category">Backend</div>
+                        <div class="reading-time">
+                            <i class="fas fa-clock"></i>
+                            10 min
+                        </div>
+                    </div>
+
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">March 5, 2024</span>
+                            <div class="article-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">AsyncIO</span>
+                            </div>
+                        </div>
+
+                        <h3 class="article-title">Mastering Asynchronous Programming in Python with AsyncIO</h3>
+
+                        <p class="article-excerpt">
+                            Deep dive into Python's asyncio library, understanding coroutines, event loops,
+                            and building high-performance asynchronous applications.
+                        </p>
+
+                        <div class="article-stats">
+                            <div class="stat">
+                                <i class="fas fa-eye"></i>
+                                2.1K
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-heart"></i>
+                                189
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card" data-category="cloud">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop&crop=entropy"
+                            alt="AWS Serverless Architecture" loading="lazy">
+                        <div class="article-category">Cloud</div>
+                        <div class="reading-time">
+                            <i class="fas fa-clock"></i>
+                            15 min
+                        </div>
+                    </div>
+
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">February 28, 2024</span>
+                            <div class="article-tags">
+                                <span class="tag">AWS</span>
+                                <span class="tag">Lambda</span>
+                                <span class="tag">Serverless</span>
+                            </div>
+                        </div>
+
+                        <h3 class="article-title">Building Serverless Applications with AWS Lambda and API Gateway</h3>
+
+                        <p class="article-excerpt">
+                            Complete guide to building scalable serverless applications using AWS Lambda,
+                            API Gateway, and other AWS services with best practices and cost optimization.
+                        </p>
+
+                        <div class="article-stats">
+                            <div class="stat">
+                                <i class="fas fa-eye"></i>
+                                1.5K
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-heart"></i>
+                                97
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="article-card" data-category="tutorials">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1605745341112-85968b19335b?w=600&h=400&fit=crop&crop=entropy"
+                            alt="Docker Best Practices" loading="lazy">
+                        <div class="article-category">Tutorial</div>
+                        <div class="reading-time">
+                            <i class="fas fa-clock"></i>
+                            12 min
+                        </div>
+                    </div>
+
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">February 22, 2024</span>
+                            <div class="article-tags">
+                                <span class="tag">Docker</span>
+                                <span class="tag">DevOps</span>
+                            </div>
+                        </div>
+
+                        <h3 class="article-title">Docker Best Practices: From Development to Production</h3>
+
+                        <p class="article-excerpt">
+                            Learn essential Docker best practices for creating efficient, secure, and
+                            production-ready containers. Includes multi-stage builds and optimization techniques.
+                        </p>
+
+                        <div class="article-stats">
+                            <div class="stat">
+                                <i class="fas fa-eye"></i>
+                                1.9K
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-heart"></i>
+                                143
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="article-card" data-category="architecture">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=600&h=400&fit=crop&crop=entropy"
+                            alt="Clean Architecture" loading="lazy">
+                        <div class="article-category">Architecture</div>
+                        <div class="reading-time">
+                            <i class="fas fa-clock"></i>
+                            11 min
+                        </div>
+                    </div>
+
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">February 18, 2024</span>
+                            <div class="article-tags">
+                                <span class="tag">Architecture</span>
+                                <span class="tag">Design Patterns</span>
+                            </div>
+                        </div>
+
+                        <h3 class="article-title">Implementing Clean Architecture in Modern Applications</h3>
+
+                        <p class="article-excerpt">
+                            Explore clean architecture principles and learn how to implement them in
+                            real-world applications for better maintainability and testability.
+                        </p>
+
+                        <div class="article-stats">
+                            <div class="stat">
+                                <i class="fas fa-eye"></i>
+                                1.3K
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-heart"></i>
+                                88
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="article-card" data-category="frontend">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=600&h=400&fit=crop&crop=entropy"
+                            alt="Advanced TypeScript" loading="lazy">
+                        <div class="article-category">Frontend</div>
+                        <div class="reading-time">
+                            <i class="fas fa-clock"></i>
+                            9 min
+                        </div>
+                    </div>
+
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">February 12, 2024</span>
+                            <div class="article-tags">
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Types</span>
+                            </div>
+                        </div>
+
+                        <h3 class="article-title">Advanced TypeScript: Utility Types and Generic Constraints</h3>
+
+                        <p class="article-excerpt">
+                            Master advanced TypeScript features including utility types, generic constraints,
+                            and conditional types for building robust type-safe applications.
+                        </p>
+
+                        <div class="article-stats">
+                            <div class="stat">
+                                <i class="fas fa-eye"></i>
+                                1.7K
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-heart"></i>
+                                132
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="load-more-container">
+                <button class="btn btn-secondary load-more-btn">
+                    <i class="fas fa-plus"></i>
+                    Load More Articles
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section section-padding bg-secondary">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <div class="newsletter-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="newsletter-title">Stay Updated</h3>
+                    <p class="newsletter-description">
+                        Subscribe to get the latest articles, tutorials, and insights delivered to your inbox.
+                        Join 2,500+ developers who trust our content.
+                    </p>
+                </div>
+
+                <form class="newsletter-form" id="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Subscribe
+                        </button>
+                    </div>
+                    <p class="form-disclaimer">
+                        No spam, unsubscribe at any time. We respect your privacy.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Archive Section -->
+    <section class="archive-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Article Archive</h2>
+                <p class="section-subtitle">Browse articles by date and category</p>
+            </div>
+
+            <div class="archive-grid">
+                <div class="archive-card">
+                    <div class="archive-header">
+                        <h4>March 2024</h4>
+                        <span class="article-count">5 articles</span>
+                    </div>
+                    <ul class="archive-list">
+                        <li><a href="#">Building Scalable Microservices Architecture</a></li>
+                        <li><a href="#">Advanced React Hooks and Performance</a></li>
+                        <li><a href="#">Mastering Python AsyncIO</a></li>
+                        <li><a href="#">Clean Code Principles in Practice</a></li>
+                        <li><a href="#">Modern CSS Grid Layouts</a></li>
+                    </ul>
+                </div>
+
+                <div class="archive-card">
+                    <div class="archive-header">
+                        <h4>February 2024</h4>
+                        <span class="article-count">7 articles</span>
+                    </div>
+                    <ul class="archive-list">
+                        <li><a href="#">AWS Serverless Best Practices</a></li>
+                        <li><a href="#">Docker Production Guidelines</a></li>
+                        <li><a href="#">Clean Architecture Implementation</a></li>
+                        <li><a href="#">Advanced TypeScript Features</a></li>
+                        <li><a href="#">Database Optimization Techniques</a></li>
+                        <li><a href="#">API Design Best Practices</a></li>
+                        <li><a href="#">Testing Strategies for Modern Apps</a></li>
+                    </ul>
+                </div>
+
+                <div class="archive-card">
+                    <div class="archive-header">
+                        <h4>January 2024</h4>
+                        <span class="article-count">6 articles</span>
+                    </div>
+                    <ul class="archive-list">
+                        <li><a href="#">GraphQL vs REST APIs</a></li>
+                        <li><a href="#">Kubernetes Deployment Strategies</a></li>
+                        <li><a href="#">Modern JavaScript Patterns</a></li>
+                        <li><a href="#">Security in Web Applications</a></li>
+                        <li><a href="#">Performance Monitoring Guide</a></li>
+                        <li><a href="#">CI/CD Pipeline Optimization</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-logo">Yasmine Cherif</h3>
+                    <p>Software Engineer & Full-Stack Developer</p>
+                    <p>Building the future, one line of code at a time.</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="pages/experience.html">Experience</a></li>
+                            <li><a href="pages/projects.html">Projects</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://medium.com/@yasminecherif" target="_blank">Blog</a></li>
+                            <li><a href="pages/contact.html">Contact</a></li>
+                            <li><a href="https://github.com/CherifYasmine" target="_blank">GitHub</a></li>
+                            <li><a href="https://linkedin.com/in/yasmine-cherif-0498b01b3/" target="_blank">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-social">
+                    <a href="https://github.com/CherifYasmine" class="social-icon" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yasmine-cherif-0498b01b3/" class="social-icon" target="_blank"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:yasmine.cherif9@gmail.com" class="social-icon" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Yasmine Cherif. All rights reserved.</p>
+                <p>Made with ❤️ and lots of ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-sun sun-icon"></i>
+        <i class="fas fa-moon moon-icon"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../js/common.js"></script>
+    <script src="../js/blog.js"></script>
+</body>
+
+</html>

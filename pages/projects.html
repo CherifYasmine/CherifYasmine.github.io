@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects & Portfolio - Yasmine Cherif</title>
+    <meta name="description"
+        content="Portfolio of projects by Yasmine Cherif - Full Stack Developer showcasing innovative web applications and solutions">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/projects.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Yasmine Cherif</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="experience.html" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link active">Projects</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <!-- <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div> -->
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="header-background">
+            <div class="particle-system">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+
+            <div class="code-blocks">
+                <div class="code-block" style="--delay: 0s;">
+                    <pre><code>const projects = {
+  innovative: true,
+  scalable: true,
+  userFocused: true
+};</code></pre>
+                </div>
+                <div class="code-block" style="--delay: 3s;">
+                    <pre><code>function buildAmazing() {
+  return creativity + 
+         technology + 
+         passion;
+}</code></pre>
+                </div>
+                <div class="code-block" style="--delay: 6s;">
+                    <pre><code>// Bringing ideas to life
+deploy(innovation);</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="header-content">
+                <div class="header-badge">
+                    <i class="fas fa-rocket"></i>
+                    <span>Featured Projects</span>
+                </div>
+
+                <h1 class="page-title">
+                    <span class="title-gradient">Creative</span>
+                    <span class="title-main">Portfolio</span>
+                </h1>
+
+                <p class="page-subtitle">
+                    Discover my journey through code, creativity, and innovation.
+                    Each project represents a unique challenge solved with cutting-edge
+                    technologies and user-centered design.
+                </p>
+
+                <div class="header-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50K+</div>
+                        <div class="stat-label">Lines of Code</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Technologies Used</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Satisfaction Rate</div>
+                    </div>
+                </div>
+
+                <div class="header-actions">
+                    <a href="#featured-projects" class="btn btn-primary">
+                        <i class="fas fa-eye"></i>
+                        View Projects
+                    </a>
+                    <a href="contact.html" class="btn btn-secondary">
+                        <i class="fas fa-handshake"></i>
+                        Let's Collaborate
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Projects -->
+    <section id="featured-projects" class="featured-projects section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">
+                    Highlighting my most impactful and innovative work
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: E-Commerce Platform -->
+                <article class="project-card featured" data-category="web-app">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-buttons">
+                                <button class="btn-icon" data-action="preview">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="btn-icon" data-action="github">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                                <button class="btn-icon" data-action="live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-category">Web Application</div>
+                            <div class="project-status featured">Featured</div>
+                        </div>
+
+                        <h3 class="project-title">ModernShop - E-Commerce Platform</h3>
+
+                        <p class="project-description">
+                            A full-stack e-commerce platform with advanced features including real-time
+                            inventory management, payment integration, and AI-powered product recommendations.
+                            Built with React, Node.js, and PostgreSQL.
+                        </p>
+
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Real-time inventory tracking</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Payment gateway integration</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>AI product recommendations</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Admin dashboard with analytics</span>
+                            </div>
+                        </div>
+
+                        <div class="project-tech">
+                            <span class="tech-tag react">React</span>
+                            <span class="tech-tag node">Node.js</span>
+                            <span class="tech-tag database">PostgreSQL</span>
+                            <span class="tech-tag cloud">AWS</span>
+                            <span class="tech-tag tool">Stripe API</span>
+                        </div>
+
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">40%</span>
+                                <span class="metric-label">Performance Increase</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">10K+</span>
+                                <span class="metric-label">Daily Users</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">99.9%</span>
+                                <span class="metric-label">Uptime</span>
+                            </div>
+                        </div>
+
+                        <!-- <div class="project-actions">
+                            <a href="#" class="btn btn-primary">
+                                <i class="fas fa-info-circle"></i>
+                                View Details
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                        </div> -->
+                    </div>
+                </article>
+
+                <!-- Project 2: Task Management App -->
+                <article class="project-card" data-category="web-app mobile">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-buttons">
+                                <button class="btn-icon" data-action="preview">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="btn-icon" data-action="github">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                                <button class="btn-icon" data-action="live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-category">Full-Stack App</div>
+                            <div class="project-status new">New</div>
+                        </div>
+
+                        <h3 class="project-title">TaskFlow - Smart Project Management</h3>
+
+                        <p class="project-description">
+                            An intelligent project management application with real-time collaboration,
+                            automated workflows, and AI-assisted task prioritization. Features both
+                            web and mobile interfaces for seamless productivity.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-tag react">React</span>
+                            <span class="tech-tag mobile">React Native</span>
+                            <span class="tech-tag node">Express.js</span>
+                            <span class="tech-tag database">MongoDB</span>
+                            <span class="tech-tag realtime">Socket.io</span>
+                        </div>
+
+                        <!-- <div class="project-actions">
+                            <a href="#" class="btn btn-primary">
+                                <i class="fas fa-info-circle"></i>
+                                Learn More
+                            </a>
+                        </div> -->
+                    </div>
+                </article>
+
+                <!-- Project 7: Pomodoro Productivity Extension -->
+                <article class="project-card" data-category="extension open-source productivity" data-github-url="https://github.com/CherifYasmine/extension-pomodoro-productivity">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-hourglass-half"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-buttons">
+                                <button class="btn-icon" data-action="preview" aria-label="Preview">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="btn-icon" data-action="github" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-category">Browser Extension</div>
+                            <div class="project-status open-source">Open Source</div>
+                        </div>
+
+                        <h3 class="project-title">Pomodoro Productivity Extension</h3>
+
+                        <p class="project-description">
+                            A Chrome extension for focused work with a Pomodoro timer, a list of tasks for the day.
+                        </p>
+
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Pomodoro Focus Mode: Focus, Short Break, Long Break (every 4th cycle) with adjustable durations.</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>One Main Task for the day (strike-through when completed) and a list of additional tasks.</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Block distracting websites during Focus mode (customizable list)</span>
+                            </div>
+                            <!-- <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Light/Dark/Auto theme support (system or manual override)</span>
+                            </div> -->
+                        </div>
+
+                        <div class="project-tech">
+                            <span class="tech-tag react">React</span>
+                            <span class="tech-tag typescript">TypeScript</span>
+                            <span class="tech-tag tool">Vite</span>
+                            <span class="tech-tag tool">Manifest V3</span>
+                            <span class="tech-tag tool">WebExtensions API</span>
+                        </div>
+
+                        <!-- Optional explicit link -->
+                        <!-- <div class="project-actions">
+                            <a href="https://github.com/CherifYasmine/extension-pomodoro-productivity" target="_blank" rel="noopener" class="btn btn-secondary">
+                                <i class="fab fa-github"></i>
+                                View on GitHub
+                            </a>
+                        </div> -->
+                    </div>
+                </article>
+
+                <!-- Project 3: Weather Analytics API -->
+                <article class="project-card" data-category="api">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-buttons">
+                                <button class="btn-icon" data-action="preview">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="btn-icon" data-action="github">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                                <button class="btn-icon" data-action="docs">
+                                    <i class="fas fa-book"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-category">API & Backend</div>
+                            <div class="project-status trending">Trending</div>
+                        </div>
+
+                        <h3 class="project-title">WeatherAPI - Analytics Platform</h3>
+
+                        <p class="project-description">
+                            A comprehensive weather analytics API providing real-time data, historical
+                            analysis, and predictive insights. Serves over 1M requests daily with
+                            99.99% reliability and advanced caching mechanisms.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-tag python">Python</span>
+                            <span class="tech-tag api">FastAPI</span>
+                            <span class="tech-tag database">Redis</span>
+                            <span class="tech-tag cloud">Docker</span>
+                            <span class="tech-tag monitoring">Grafana</span>
+                        </div>
+
+                        <!-- <div class="project-actions">
+                            <a href="#" class="btn btn-primary">
+                                <i class="fas fa-code"></i>
+                                View Code
+                            </a>
+                        </div> -->
+                    </div>
+                </article>
+
+                <!-- Project 5: Mobile Fitness App -->
+                <article class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-buttons">
+                                <button class="btn-icon" data-action="preview">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="btn-icon" data-action="appstore">
+                                    <i class="fab fa-app-store"></i>
+                                </button>
+                                <button class="btn-icon" data-action="playstore">
+                                    <i class="fab fa-google-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-category">Mobile App</div>
+                            <div class="project-status">4.8★</div>
+                        </div>
+
+                        <h3 class="project-title">FitTracker - Personal Fitness</h3>
+
+                        <p class="project-description">
+                            A comprehensive fitness tracking app with AI-powered workout recommendations,
+                            nutrition planning, and social features. Over 50K downloads with 4.8/5
+                            rating on app stores.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-tag mobile">React Native</span>
+                            <span class="tech-tag backend">Node.js</span>
+                            <span class="tech-tag ml">TensorFlow</span>
+                            <span class="tech-tag database">Firebase</span>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Project 6: Blockchain Voting System -->
+                <article class="project-card" data-category="web-app open-source">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-vote-yea"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-buttons">
+                                <button class="btn-icon" data-action="preview">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="btn-icon" data-action="github">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                                <button class="btn-icon" data-action="demo">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-category">Blockchain</div>
+                            <div class="project-status secure">Secure</div>
+                        </div>
+
+                        <h3 class="project-title">SecureVote - Blockchain Voting</h3>
+
+                        <p class="project-description">
+                            A transparent and secure voting system built on Ethereum blockchain.
+                            Features smart contracts, voter authentication, and real-time results
+                            with complete audit trails and tamper-proof records.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-tag blockchain">Solidity</span>
+                            <span class="tech-tag web3">Web3.js</span>
+                            <span class="tech-tag react">React</span>
+                            <span class="tech-tag ethereum">Ethereum</span>
+                        </div>
+
+                        <!-- <div class="project-actions">
+                            <a href="#" class="btn btn-primary">
+                                <i class="fas fa-shield-alt"></i>
+                                Security Audit
+                            </a>
+                        </div> -->
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Showcase Carousel -->
+    <section class="project-showcase section-padding bg-secondary">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Project Spotlight</h2>
+                <p class="section-subtitle">
+                    Deep dive into selected projects with detailed case studies
+                </p>
+            </div>
+
+            <div class="showcase-carousel">
+                <div class="carousel-container">
+                    <div class="showcase-slide active" data-project="modernshop">
+                        <div class="slide-content">
+                            <div class="slide-media">
+                                <div class="media-placeholder">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="media-overlay">
+                                    <button class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="slide-info">
+                                <h3>ModernShop E-Commerce Platform</h3>
+                                <div class="slide-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">6</span>
+                                        <span class="stat-label">Months Development</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">3</span>
+                                        <span class="stat-label">Team Members</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">15K</span>
+                                        <span class="stat-label">Lines of Code</span>
+                                    </div>
+                                </div>
+
+                                <div class="case-study">
+                                    <h4>Challenge</h4>
+                                    <p>Create a scalable e-commerce platform that could handle high traffic loads while
+                                        providing personalized shopping experiences.</p>
+
+                                    <h4>Solution</h4>
+                                    <p>Implemented microservices architecture with Redis caching, AI-powered
+                                        recommendations, and real-time inventory management.</p>
+
+                                    <h4>Results</h4>
+                                    <ul>
+                                        <li>40% improvement in page load times</li>
+                                        <li>25% increase in conversion rates</li>
+                                        <li>99.9% uptime maintained</li>
+                                        <li>10K+ daily active users</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase-slide" data-project="taskflow">
+                        <div class="slide-content">
+                            <div class="slide-media">
+                                <div class="media-placeholder">
+                                    <i class="fas fa-tasks"></i>
+                                </div>
+                            </div>
+
+                            <div class="slide-info">
+                                <h3>TaskFlow Project Management</h3>
+                                <div class="case-study">
+                                    <h4>Innovation</h4>
+                                    <p>AI-powered task prioritization and automated workflow optimization for enhanced
+                                        productivity.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel-indicators">
+                        <span class="indicator active"></span>
+                        <span class="indicator"></span>
+                    </div>
+                    <button class="carousel-btn next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Used -->
+    <section class="technologies-used section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technologies & Tools</h2>
+                <p class="section-subtitle">
+                    The powerful tech stack behind my projects
+                </p>
+            </div>
+
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3>Frontend</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <i class="fab fa-react"></i>
+                            <span>React / React Native</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-vuejs"></i>
+                            <span>Angular</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3>Backend</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-database"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-fire"></i>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3>Cloud & DevOps</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-dharmachakra"></i>
+                            <span>Kubernetes</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-cubes"></i>
+                            <span>Terraform</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub Actions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Activity -->
+    <section class="github-activity section-padding bg-secondary">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">GitHub Activity</h2>
+                <p class="section-subtitle">
+                    My open source contributions and development activity
+                </p>
+            </div>
+
+            <div class="github-stats">
+                <div class="github-card">
+                    <div class="github-header">
+                        <i class="fab fa-github"></i>
+                        <h3>Contribution Overview</h3>
+                    </div>
+
+                    <div class="github-metrics">
+                        <div class="github-metric">
+                            <span class="metric-number">150+</span>
+                            <span class="metric-label">Contributions This Year</span>
+                        </div>
+                        <div class="github-metric">
+                            <span class="metric-number">25</span>
+                            <span class="metric-label">Public Repositories</span>
+                        </div>
+                        <div class="github-metric">
+                            <span class="metric-number">50+</span>
+                            <span class="metric-label">Stars Earned</span>
+                        </div>
+                        <div class="github-metric">
+                            <span class="metric-number">15</span>
+                            <span class="metric-label">Forks</span>
+                        </div>
+                    </div>
+
+                    <div class="github-languages">
+                        <h4>Most Used Languages</h4>
+                        <div class="language-bars">
+                            <div class="language-bar">
+                                <div class="language-info">
+                                    <span>JavaScript</span>
+                                    <span>45%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" data-width="45%" style="background: #f7df1e;"></div>
+                                </div>
+                            </div>
+
+                            <div class="language-bar">
+                                <div class="language-info">
+                                    <span>Python</span>
+                                    <span>30%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" data-width="30%" style="background: #3776ab;"></div>
+                                </div>
+                            </div>
+
+                            <div class="language-bar">
+                                <div class="language-info">
+                                    <span>TypeScript</span>
+                                    <span>15%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" data-width="15%" style="background: #007acc;"></div>
+                                </div>
+                            </div>
+
+                            <div class="language-bar">
+                                <div class="language-info">
+                                    <span>CSS</span>
+                                    <span>10%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" data-width="10%" style="background: #1572b6;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="github-actions">
+                        <a href="#" class="btn btn-primary">
+                            <i class="fab fa-github"></i>
+                            View Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="projects-cta section-padding">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Next Project?</h2>
+                <p>
+                    Let's collaborate to bring your vision to life. I'm passionate about
+                    creating innovative solutions that make a real impact.
+                </p>
+
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Start a Project
+                    </a>
+                    <a href="../assets/Yasmine_s_resume.pdf" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                </div>
+
+                <div class="cta-note">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Free consultation for innovative project ideas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-logo">Yasmine Cherif</h3>
+                    <p>Software Engineer & Full-Stack Developer</p>
+                    <p>Building the future, one line of code at a time.</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="pages/experience.html">Experience</a></li>
+                            <li><a href="pages/projects.html">Projects</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://medium.com/@yasminecherif" target="_blank">Blog</a></li>
+                            <li><a href="pages/contact.html">Contact</a></li>
+                            <li><a href="https://github.com/CherifYasmine" target="_blank">GitHub</a></li>
+                            <li><a href="https://linkedin.com/in/yasmine-cherif-0498b01b3/" target="_blank">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-social">
+                    <a href="https://github.com/CherifYasmine" class="social-icon" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yasmine-cherif-0498b01b3/" class="social-icon" target="_blank"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:yasmine.cherif9@gmail.com" class="social-icon" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Yasmine Cherif. All rights reserved.</p>
+                <p>Made with ❤️ and lots of ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title"></h3>
+                <button class="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <div id="modal-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> -->
+    <script src="../js/common.js"></script>
+    <script src="../js/projects.js"></script>
+</body>
+
+</html>
