@@ -97,11 +97,6 @@ The contact form includes:
 - **Accessibility**: Proper labels and error messaging
 - **Smooth Animations**: Engaging user feedback
 
-**Note**: Form submission is currently set up for demo purposes. To make it functional:
-1. Replace the form action with your backend endpoint
-2. Add server-side processing for form data
-3. Configure email sending functionality
-
 ## 🎨 Theme Support
 
 The website includes a dark/light theme toggle:
@@ -110,58 +105,9 @@ The website includes a dark/light theme toggle:
 - **Persistent Storage**: Remembers user preference
 - **Smooth Transition**: Animated theme switching
 
-## ✨ Easter Eggs
-
-Try the Konami Code: ↑↑↓↓←→←→BA for a surprise!
-
-## 📄 Files Structure
-
-```
-portfolio/
-├── index.html          # Main HTML file
-├── styles.css          # CSS styles and animations
-├── script.js           # JavaScript functionality
-├── sw.js              # Service worker for caching
-└── README.md          # This file
-```
-
-## 🚀 Deployment
-
-Deploy easily to any static hosting service:
-
-- **GitHub Pages**: Push to GitHub and enable Pages
-- **Netlify**: Drag and drop the folder
-- **Vercel**: Import the project
-- **Firebase Hosting**: Use Firebase CLI
-- **AWS S3**: Upload to S3 bucket with static hosting
-
-## 🔍 SEO Ready
-
-- Semantic HTML structure
-- Meta tags for social sharing
-- Proper heading hierarchy
-- Alt text for images (when added)
-- Fast loading times
-
-## 🎨 Color Palette
-
-- **Primary Blue**: #2563eb
-- **Accent Cyan**: #06b6d4
-- **Text Dark**: #1e293b
-- **Text Light**: #64748b
-- **Background**: #ffffff
-- **Secondary BG**: #f8fafc
-
-## 📱 Mobile-First Design
-
-Built with mobile-first approach:
-- Touch-friendly interactive elements
-- Readable font sizes on small screens
-- Optimized layouts for mobile devices
-- Fast loading on slower connections
 
 ---
 
-**Built with ❤️ for Yasmine Cherif**
+**Built with ❤️ by Yasmine Cherif**
 
 For questions or suggestions, please contact: [yasmine.cherif9@gmail.com](mailto:yasmine.cherif9@gmail.com)
