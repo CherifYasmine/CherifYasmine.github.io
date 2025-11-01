@@ -67,12 +67,12 @@ Customize colors and styling in `styles.css`:
 - **Typography**: Modify font sizes and families
 - **Animations**: Adjust animation durations and effects
 
-### Content
+<!-- ### Content
 Replace placeholder content with:
 
 - **Professional Photo**: Replace the placeholder in the hero section
 - **Company Logos**: Add company logos to experience items
-- **Project Images**: Add screenshots of projects
+- **Project Images**: Add screenshots of projects -->
 
 ## 🎯 Performance Features
 
