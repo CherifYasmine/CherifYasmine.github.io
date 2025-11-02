@@ -889,13 +889,14 @@ code {
         top: var(--header-height);
         left: 0;
         width: 100%;
-        height: calc(100vh - var(--header-height));
+        /* Let the menu fit its content to avoid forcing vertical scroll */
+        height: auto;
         background: rgba(255, 255, 255, 0.98);
         backdrop-filter: blur(20px);
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: var(--space-8);
+        padding: var(--space-6) var(--space-4);
         transform: translateX(-100%);
         transition: transform var(--transition-normal);
         box-shadow: var(--shadow-xl);
@@ -903,7 +904,7 @@ code {
     }
 
     [data-theme="dark"] .nav-menu {
-        background: rgba(26, 32, 44, 0.95);
+        background: rgba(26, 32, 44, 0.98);
     }
 
     .nav-menu.active {
@@ -912,7 +913,7 @@ code {
 
     .nav-link {
         font-size: 1.25rem;
-        padding: var(--space-4);
+        padding: var(--space-3);
         width: 100%;
         text-align: center;
     }

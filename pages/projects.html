@@ -500,6 +500,72 @@ deploy(innovation);</code></pre>
                         </div> -->
                     </div>
                 </article>
+
+                <!-- Project 8: Real-Time DevOps Monitoring Hub -->
+                <article class="project-card" data-category="devops backend realtime monitoring">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-buttons">
+                                <button class="btn-icon" data-action="preview" aria-label="Preview">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="btn-icon" data-action="github" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-category">DevOps Platform</div>
+                            <div class="project-status new">New</div>
+                        </div>
+
+                        <h3 class="project-title">Real-Time DevOps Monitoring Hub</h3>
+
+                        <p class="project-description">
+                            A real-time observability and alerting platform that ingests telemetry at scale, processes metrics and logs, and provides instant visualizations and actionable alerts for engineering teams.
+                        </p>
+
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Event Ingestion with Apache Kafka for scalable, durable pipelines</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Stream Processing via Node.js workers for real-time enrichment</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Time-series storage in PostgreSQL/TimescaleDB</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Grafana dashboards for metrics, SLOs, and service health</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Alerting to Slack/Email with smart thresholds and deduplication</span>
+                            </div>
+                        </div>
+
+                        <div class="project-tech">
+                            <span class="tech-tag realtime">Kafka</span>
+                            <span class="tech-tag node">Node.js</span>
+                            <span class="tech-tag database">PostgreSQL</span>
+                            <span class="tech-tag monitoring">Grafana</span>
+                            <span class="tech-tag monitoring">Prometheus</span>
+                            <span class="tech-tag cloud">Docker</span>
+                            <span class="tech-tag cloud">Kubernetes</span>
+                            <span class="tech-tag tool">Slack API</span>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -521,11 +587,6 @@ deploy(innovation);</code></pre>
                             <div class="slide-media">
                                 <div class="media-placeholder">
                                     <i class="fas fa-shopping-cart"></i>
-                                </div>
-                                <div class="media-overlay">
-                                    <button class="play-btn">
-                                        <i class="fas fa-play"></i>
-                                    </button>
                                 </div>
                             </div>
 
@@ -585,6 +646,49 @@ deploy(innovation);</code></pre>
                             </div>
                         </div>
                     </div>
+
+                    <div class="showcase-slide" data-project="devops-monitoring">
+                        <div class="slide-content">
+                            <div class="slide-media">
+                                <div class="media-placeholder">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                            </div>
+
+                            <div class="slide-info">
+                                <h3>Real-Time DevOps Monitoring Hub</h3>
+                                <div class="slide-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">1M+</span>
+                                        <span class="stat-label">Events/Day</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">&lt; 5s</span>
+                                        <span class="stat-label">Alert Latency</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">10+</span>
+                                        <span class="stat-label">Dashboards</span>
+                                    </div>
+                                </div>
+
+                                <div class="case-study">
+                                    <h4>Challenge</h4>
+                                    <p>Provide unified, real-time visibility across microservices while minimizing MTTR and avoiding alert fatigue.</p>
+
+                                    <h4>Solution</h4>
+                                    <p>Kafka-based ingestion with Node.js stream processors, Prometheus exporters, and Grafana dashboards. Smart alert routing to Slack and email with deduplication.</p>
+
+                                    <h4>Results</h4>
+                                    <ul>
+                                        <li>Reduced incident MTTR by 35%</li>
+                                        <li>Consolidated metrics and logs into a single pane of glass</li>
+                                        <li>Actionable alerts with noise reduction and clear ownership</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="carousel-controls">
@@ -593,6 +697,7 @@ deploy(innovation);</code></pre>
                     </button>
                     <div class="carousel-indicators">
                         <span class="indicator active"></span>
+                        <span class="indicator"></span>
                         <span class="indicator"></span>
                     </div>
                     <button class="carousel-btn next">

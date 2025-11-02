@@ -1223,7 +1223,13 @@
     background: var(--dark-bg-primary);
     border-color: var(--dark-border);
 }
-
+[data-theme="dark"] .indicator {
+    background: rgba(255, 255, 255, 0.8);
+    opacity: 0.8;
+}
+[data-theme="dark"] .indicator.active {
+    background: var(--primary-color);
+}
 [data-theme="dark"] .tech-item,
 [data-theme="dark"] .github-metric,
 [data-theme="dark"] .project-metrics,
