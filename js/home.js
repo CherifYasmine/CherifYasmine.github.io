@@ -158,28 +158,10 @@ class HomePageController {
         }
     }
 
-    // Parallax Scrolling Effect
+    // Parallax Scrolling Effect (shapes handled elsewhere; code window fixed)
     setupParallaxScrolling() {
-        const heroShapes = document.querySelectorAll('.geometric-shape');
-        const codeWindow = document.querySelector('.code-window');
-        
-        const handleScroll = Utils.throttle(() => {
-            const scrolled = window.pageYOffset;
-            const parallax = scrolled * 0.5;
-            
-            // Move geometric shapes
-            heroShapes.forEach((shape, index) => {
-                const speed = 0.3 + (index * 0.1);
-                shape.style.transform = `translateY(${scrolled * speed}px)`;
-            });
-            
-            // Parallax effect for code window
-            if (codeWindow) {
-                codeWindow.style.transform = `translateY(${parallax * 0.2}px)`;
-            }
-        }, 10);
-
-        window.addEventListener('scroll', handleScroll);
+        // Intentionally left blank to avoid moving the code window or hero visual on scroll.
+        // Geometric shapes parallax is handled by ScrollAnimationController.
     }
 
     // Service Card Animations
@@ -504,15 +486,16 @@ class ScrollAnimationController {
     }
 
     setupParallaxElements() {
-        const parallaxElements = document.querySelectorAll('.hero-visual, .geometric-shape');
-        
+        // Apply parallax only to decorative geometric shapes; keep hero/code window static
+        const parallaxShapes = document.querySelectorAll('.geometric-shape');
+
         const handleScroll = Utils.throttle(() => {
             const scrolled = window.pageYOffset;
-            
-            parallaxElements.forEach((element, index) => {
+
+            parallaxShapes.forEach((shape, index) => {
                 const speed = 0.5 + (index * 0.1);
                 const yPos = -(scrolled * speed);
-                element.style.transform = `translateY(${yPos}px)`;
+                shape.style.transform = `translateY(${yPos}px)`;
             });
         }, 16);
 

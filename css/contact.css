@@ -159,6 +159,35 @@
     margin-right: auto;
 }
 
+/* Match hero social styles from the home page */
+.contact-header .hero-social {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+}
+
+.contact-header .social-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-lg);
+    color: white;
+    font-size: 1.25rem;
+    transition: all var(--transition-normal);
+    backdrop-filter: blur(10px);
+}
+
+.contact-header .social-icon:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-3px);
+    color: white;
+}
+
 .contact-methods {
     display: flex;
     justify-content: center;
