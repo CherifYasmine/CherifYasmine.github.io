@@ -81,7 +81,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 5rem var(--spacing-6);
+    padding: 3rem var(--spacing-6);
 }
 
 /* Typography */
@@ -857,7 +857,7 @@ section {
     }
     
     .container {
-        padding: 5rem var(--spacing-4);
+        padding: 3rem var(--spacing-4);
     }
     
     section {

@@ -841,8 +841,10 @@
         padding-left: 80px;
     }
     
+    /* Keep year pill centered instead of shifting off the left on tablets */
     .timeline-item::before {
-        left: -40px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     
     .timeline-marker {
@@ -879,10 +881,15 @@
         margin-bottom: var(--space-12);
     }
     
+    /* On small screens, place the year pill centered on the bottom edge like desktop */
     .timeline-item::before {
-        position: static;
+        position: absolute;
+        bottom: -1rem;
+        left: 50%;
+        transform: translateX(-50%);
         display: inline-block;
-        margin-bottom: var(--space-4);
+        width: auto;
+        margin: 0;
     }
     
     .timeline-marker {
