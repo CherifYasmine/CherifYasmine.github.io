@@ -720,7 +720,7 @@
 
 .skill-year {
     display: grid;
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 120px 1fr;
     gap: var(--space-8);
     align-items: center;
     padding: var(--space-6);
