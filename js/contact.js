@@ -216,6 +216,11 @@ class ContactPageController {
 
 // ===== CONTACT FORM CONTROLLER =====
 
+// Backend endpoint configuration
+// Formspree endpoint for handling contact form submissions
+// Docs: https://formspree.io
+const CONTACT_FORM_ENDPOINT = 'https://formspree.io/f/mnnoyjqy';
+
 class ContactFormController {
     constructor() {
         this.form = document.getElementById('contact-form');
@@ -417,8 +422,8 @@ class ContactFormController {
             const formData = new FormData(this.form);
             const data = Object.fromEntries(formData.entries());
             
-            // Simulate API call (replace with actual endpoint)
-            await this.submitForm(data);
+            // Submit to configured backend endpoint
+            await this.submitForm(formData);
             
             this.showSuccessModal();
             this.form.reset();
@@ -448,15 +453,35 @@ class ContactFormController {
         }
     }
 
-    async submitForm(data) {
-        // Simulate network delay
-        await new Promise(resolve => setTimeout(resolve, 2000));
-        
-        // Here you would normally send the data to your backend
-        console.log('Form submitted:', data);
-        
-        // For now, we'll just resolve successfully
-        return { success: true, message: 'Form submitted successfully' };
+    async submitForm(formData) {
+        // Guard: backend not configured
+        if (!CONTACT_FORM_ENDPOINT || /your_form_id/i.test(CONTACT_FORM_ENDPOINT)) {
+            throw new Error('Contact form backend not configured. Please set CONTACT_FORM_ENDPOINT in js/contact.js');
+        }
+
+        const response = await fetch(CONTACT_FORM_ENDPOINT, {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json'
+            },
+            body: formData
+        });
+
+        // Formspree returns 200 OK on success
+        if (response.ok) {
+            return await response.json().catch(() => ({ success: true }));
+        }
+
+        // Try to extract error details
+        let errorDetail = 'Failed to send message. Please try again later.';
+        try {
+            const err = await response.json();
+            if (err && err.errors && err.errors.length) {
+                errorDetail = err.errors.map(e => e.message).join(' ');
+            }
+        } catch (_) { /* ignore JSON parse errors */ }
+
+        throw new Error(errorDetail);
     }
 
     showSuccessModal() {
